@@ -1,0 +1,86 @@
+{
+    "type": "Ext.Component",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": "breadcrumbs",
+        "data": [
+            "['Grandparent', 'Parent', 'Self']"
+        ],
+        "html": null,
+        "itemId": "breadcrumbs",
+        "designer|userClassName": "Breadcrumbs",
+        "designer|userAlias": "breadcrumbs",
+        "designer|ui-data": [
+            "{\"7b3ad257-9136-4e39-a591-6419ae575418\":\"default\"}"
+        ]
+    },
+    "mockCfgs": [
+        "data"
+    ],
+    "designerId": "feb70b62-c76e-4f54-8cfd-d0f3fd09ca1f",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "tpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "implHandler": [
+                    "<tpl for=\".\">",
+                    "{% if (xindex < xcount) { %}",
+                    "    <span class=\"prev\" data-card=\"{[xindex - 1]}\">{.}</span> &gt;",
+                    "{% } else { %}",
+                    "    <span class=\"current\">{.}</span>",
+                    "{% } %}",
+                    "</tpl>"
+                ],
+                "designer|displayName": "tpl"
+            },
+            "designerId": "71efe63f-132e-4652-97f4-01cfe014c872"
+        },
+        {
+            "type": "customevent",
+            "reference": {
+                "name": "customEvents",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "breadcrumbactivate",
+                "params": [
+                    "breadcrumbs",
+                    "index"
+                ]
+            },
+            "designerId": "7b248256-3e16-4c95-ac44-0ef7d91805e9"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onBreadcrumbsAfterRender",
+                "implHandler": [
+                    "component.mon(component.getEl(), 'click', function(e) {",
+                    "\tvar target = e.getTarget('.prev', 1);",
+                    "    if (target) {",
+                    "        component.fireEvent('breadcrumbactivate', component, parseInt(target.getAttribute('data-card'), 10));",
+                    "    }",
+                    "});"
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "designerId": "5c77cf7b-4d73-413a-a5ec-5a2e2112e643"
+        }
+    ]
+}

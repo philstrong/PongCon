@@ -1,0 +1,56 @@
+{
+    "name": "PongCon",
+    "settings": {
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "http://localhost:8080",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true
+    },
+    "xdsVersion": "3.0.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "ext42",
+    "viewOrderMap": {
+        "view": [
+            "ffcea574-d081-4322-969e-4d0e2a13d269",
+            "b13c117d-7e2d-4b84-82af-553c42f46f10",
+            "c05384a0-7ffb-4675-b029-8a80c55c9f30",
+            "fd7abb0f-bc57-415b-ade9-a3cad5a9261d",
+            "feb70b62-c76e-4f54-8cfd-d0f3fd09ca1f"
+        ],
+        "store": [
+            "df970bb5-548b-47ae-9ebc-b9b5a246b22d",
+            "04c90835-66de-4cc0-bf6d-1adc9cd9707e",
+            "a82f815f-b1f1-495a-973f-6478fad63fc6"
+        ],
+        "controller": [
+            "a922d048-ab91-4a36-b427-c0038c508f95"
+        ],
+        "model": [
+            "71a8832c-c22b-4b2d-9c37-e0dcbcfc56cf",
+            "fa633c9a-74ef-4e1a-a64a-db1b9374b6b2",
+            "19e972a3-76cc-44d9-aca2-5e87305469f7"
+        ],
+        "resource": [
+            "f97082e0-d27d-410f-a749-30ad9e787682",
+            "7b3ad257-9136-4e39-a591-6419ae575418",
+            "2f8750d9-d127-4178-8ec7-984669334ef7"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

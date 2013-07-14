@@ -1,0 +1,32 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Customers",
+            "CustomerCategory",
+            "Order"
+        ],
+        "stores": [
+            "Customers",
+            "Orders",
+            "Categories"
+        ],
+        "views": [
+            "Customers",
+            "CustomerDetail",
+            "ContactInfo",
+            "Breadcrumbs"
+        ],
+        "autoCreateViewport": true,
+        "controllers": [
+            "MainController"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application"
+}

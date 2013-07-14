@@ -1,0 +1,230 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "container|padding": 10,
+        "height": null,
+        "width": null,
+        "designer|userClassName": "CustomerDetail",
+        "designer|userAlias": "customerdetail",
+        "designer|ui-data": [
+            "{\"7b3ad257-9136-4e39-a591-6419ae575418\":\"default\"}"
+        ],
+        "layout": "vbox",
+        "title": "{name}"
+    },
+    "designerId": "c05384a0-7ffb-4675-b029-8a80c55c9f30",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "container|align": "stretch",
+                "height": 173,
+                "designer|ui-data": [
+                    "{\"7b3ad257-9136-4e39-a591-6419ae575418\":\"default\"}"
+                ],
+                "layout": "hbox",
+                "title": ""
+            },
+            "designerId": "2c4c7f29-3bc1-40eb-9611-e22302f68633",
+            "cn": [
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border": 1,
+                        "margin": "0 20 0 0",
+                        "padding": 10,
+                        "designer|ui-data": [
+                            "{\"7b3ad257-9136-4e39-a591-6419ae575418\":\"default\"}"
+                        ],
+                        "layout|flex": 1
+                    },
+                    "designerId": "1f57d433-a88e-4202-b0aa-3ab795b520fc",
+                    "masterInstanceId": "fd7abb0f-bc57-415b-ade9-a3cad5a9261d"
+                }
+            ]
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "layout|margins": "10 0",
+                "container|align": "stretch",
+                "designer|displayName": "button-container",
+                "layout": "hbox"
+            },
+            "designerId": "80fb3e90-73fe-424e-a358-1714459fb143",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|ui-data": [
+                            "{\"7b3ad257-9136-4e39-a591-6419ae575418\":\"default\"}"
+                        ],
+                        "iconCls": "icon-add",
+                        "text": "New Order"
+                    },
+                    "designerId": "c8da1c6a-d1bc-41d5-8dca-2a1eb9cbf6c3"
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "setCustomer",
+                "designer|params": [
+                    "customer"
+                ],
+                "implHandler": [
+                    "this.setTitle(customer.get('name'));",
+                    "this.down('contactinfo').update(customer.getData());",
+                    "this.customer = customer;"
+                ]
+            },
+            "designerId": "cd8e81d8-0e34-4bc5-9916-487a698b424c"
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "itemId": "ordersGrid",
+                "designer|ui-data": [
+                    "{\"7b3ad257-9136-4e39-a591-6419ae575418\":\"default\"}"
+                ],
+                "title": null,
+                "disableSelection": true,
+                "store": "Orders"
+            },
+            "designerId": "c8978ab6-8705-4ccd-99a0-70e96ad61dbe",
+            "cn": [
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "87bcee90-db27-4722-9e79-018bfbc783ae"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|ui-data": [
+                            "{\"7b3ad257-9136-4e39-a591-6419ae575418\":\"default\"}"
+                        ],
+                        "dataIndex": "orderNo",
+                        "text": "Orders",
+                        "flex": 1
+                    },
+                    "designerId": "b7fc9092-04be-4cd1-b8a7-876bc1cd0472"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|ui-data": [
+                            "{\"7b3ad257-9136-4e39-a591-6419ae575418\":\"default\"}"
+                        ],
+                        "dataIndex": "orderDate",
+                        "text": "Order Date"
+                    },
+                    "designerId": "8da7c956-52ef-47ac-a6b9-fa2534be3a23"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|ui-data": [
+                            "{\"7b3ad257-9136-4e39-a591-6419ae575418\":\"default\"}"
+                        ],
+                        "dataIndex": "shipDate",
+                        "text": "Ship Date"
+                    },
+                    "designerId": "a87becd6-dca3-4ec4-ad5b-c1448dffb15a"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|ui-data": [
+                            "{\"7b3ad257-9136-4e39-a591-6419ae575418\":\"default\"}"
+                        ],
+                        "dataIndex": "total",
+                        "text": "Total"
+                    },
+                    "designerId": "f2908930-22b3-4810-94b4-6903684772e6"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|ui-data": [
+                            "{\"7b3ad257-9136-4e39-a591-6419ae575418\":\"default\"}"
+                        ],
+                        "dataIndex": "balance",
+                        "text": "Balance"
+                    },
+                    "designerId": "ef087bb4-05c9-4bd5-b658-67cc8a3b79ad"
+                }
+            ]
+        }
+    ]
+}

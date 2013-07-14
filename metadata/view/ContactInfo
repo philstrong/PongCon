@@ -1,0 +1,38 @@
+{
+    "type": "Ext.Component",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": "contactinfo",
+        "margin": "0 0 10",
+        "designer|userClassName": "ContactInfo",
+        "designer|userAlias": "contactinfo",
+        "designer|ui-data": [
+            "{\"7b3ad257-9136-4e39-a591-6419ae575418\":\"default\"}"
+        ]
+    },
+    "designerId": "fd7abb0f-bc57-415b-ade9-a3cad5a9261d",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "tpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "implHandler": [
+                    "<div class=\"name\">{name}</div>",
+                    "<div class=\"address\">{address}<br>{city}, {state} {zip}</div>",
+                    "<div class=\"phone\">Phone: {phone}</div>",
+                    "<div class=\"phone\">Fax: {fax}</div>"
+                ],
+                "designer|displayName": "tpl"
+            },
+            "designerId": "b2a6baf8-34c1-4eb8-b7ac-d3d237686a72"
+        }
+    ]
+}

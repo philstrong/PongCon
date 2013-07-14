@@ -1,0 +1,213 @@
+{
+    "type": "neptunethemeresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyNeptuneTheme"
+    },
+    "designerId": "7b3ad257-9136-4e39-a591-6419ae575418",
+    "storage": {
+        "varData": {
+            "Ext.form.field.Checkbox": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.form.field.HtmlEditor": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.toolbar.Paging": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.LoadMask": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.form.field.Base": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.tree.Panel": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.view.BoundList": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.ProgressBar": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.form.field.Radio": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.grid.feature.RowWrap": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.tab.Panel": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.window.Window": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.button.Button": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.grid.plugin.RowExpander": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.grid.plugin.Editing": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.tip.Tip": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.toolbar.Toolbar": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.form.field.Spinner": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.window.MessageBox": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.form.FieldSet": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.grid.property.Grid": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.slider.Multi": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.picker.Date": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.panel.Header": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.grid.plugin.RowEditing": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.panel.Panel": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.dd.StatusProxy": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.grid.header.Container": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.form.field.TextArea": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.panel.Table": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.form.CheckboxGroup": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.Component": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.form.Labelable": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.grid.column.Column": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.container.ButtonGroup": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.menu.Menu": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.panel.Tool": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.resizer.Resizer": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.layout.container.Accordion": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.form.field.Trigger": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.layout.container.Border": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.grid.feature.Grouping": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.FocusManager": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.resizer.Splitter": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.grid.plugin.CellEditing": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.grid.column.Action": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.picker.Color": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.form.field.Display": {
+                "globalVars": [],
+                "uis": []
+            },
+            "Ext.grid.column.CheckColumn": {
+                "globalVars": [],
+                "uis": []
+            }
+        },
+        "nameIndex": 1
+    }
+}
