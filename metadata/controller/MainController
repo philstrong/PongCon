@@ -6,6 +6,11 @@
     },
     "codeClass": null,
     "userConfig": {
+        "stores": [
+            "Orders",
+            "Customers",
+            "Categories"
+        ],
         "designer|userClassName": "MainController"
     },
     "designerId": "a922d048-ab91-4a36-b427-c0038c508f95",
@@ -91,7 +96,8 @@
             "userConfig": {
                 "fn": "onCustomerSelect",
                 "designer|params": [
-                    "panel"
+                    "customer",
+                    "eventOptions"
                 ],
                 "implHandler": [
                     "var detailCard = this.getCustomerDetail();",
@@ -104,7 +110,7 @@
                     "    }",
                     "};",
                     "this.getOrdersStore().load(args);",
-                    "this.getPeriodTotalsStore().load(args);"
+                    ""
                 ],
                 "name": "customerselect",
                 "scope": "me",

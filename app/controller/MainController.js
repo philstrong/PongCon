@@ -16,6 +16,12 @@
 Ext.define('MyApp.controller.MainController', {
     extend: 'Ext.app.Controller',
 
+    stores: [
+        'Orders',
+        'Customers',
+        'Categories'
+    ],
+
     refs: [
         {
             ref: 'customers',
@@ -39,7 +45,7 @@ Ext.define('MyApp.controller.MainController', {
         this.getCardCt().getLayout().setActiveItem(index);
     },
 
-    onCustomerSelect: function(panel) {
+    onCustomerSelect: function(customer, eventOptions) {
         var detailCard = this.getCustomerDetail();
         detailCard.setCustomer(customer);
         detailCard.ownerCt.getLayout().setActiveItem(detailCard);
@@ -50,7 +56,7 @@ Ext.define('MyApp.controller.MainController', {
             }
         };
         this.getOrdersStore().load(args);
-        this.getPeriodTotalsStore().load(args);
+        
     },
 
     onCardSwitch: function(component, eOpts) {
