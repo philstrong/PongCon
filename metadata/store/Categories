@@ -21,7 +21,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "../categories"
+                "url": "http://localhost:8080/categories"
             },
             "designerId": "588f655e-c7b1-4be3-b8a1-3e805982e0d2",
             "cn": [

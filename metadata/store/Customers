@@ -21,7 +21,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "../customers"
+                "url": "http://localhost:8080/customers"
             },
             "designerId": "58307688-f67e-45d5-a525-895df88e5447",
             "cn": [

@@ -29,7 +29,7 @@ Ext.define('MyApp.store.Categories', {
             storeId: 'Categories',
             proxy: {
                 type: 'ajax',
-                url: '../categories',
+                url: 'http://localhost:8080/categories',
                 reader: {
                     type: 'json'
                 }
